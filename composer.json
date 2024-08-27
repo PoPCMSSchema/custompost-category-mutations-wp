@@ -1,5 +1,5 @@
 {
-    "name": "pop-cms-schema/post-category-mutations-wp",
+    "name": "pop-cms-schema/custompost-category-mutations-wp",
     "conflict": {
         "pop-api/api-rest": "<4.2.0",
         "pop-api/api-graphql": "<4.2.0",
@@ -16,7 +16,6 @@
         "pop-cms-schema/users-wp": "<4.2.0",
         "pop-cms-schema/custompostmeta-wp": "<4.2.0",
         "pop-cms-schema/custompost-mutations": "<4.2.0",
-        "pop-cms-schema/post-tag-mutations-wp": "<4.2.0",
         "pop-cms-schema/post-tag-mutations": "<4.2.0",
         "pop-cms-schema/tags-wp": "<4.2.0",
         "pop-cms-schema/posts": "<4.2.0",
@@ -141,9 +140,9 @@
         "pop-cms-schema/tag-mutations-wp": "<4.2.0"
     },
     "type": "library",
-    "description": "Implementation for WordPress of contracts from package \"Post Category Mutations\"",
-    "keywords": ["Gato", "GatoGraphQL", "GraphQL", "PHP", "post-category-mutations-wp"],
-    "homepage": "https://github.com/PoPCMSSchema/post-category-mutations-wp",
+    "description": "Implementation for WordPress of contracts from package \"Custom Post Category Mutations\"",
+    "keywords": ["Gato", "GatoGraphQL", "GraphQL", "PHP", "custompost-category-mutations-wp"],
+    "homepage": "https://github.com/PoPCMSSchema/custompost-category-mutations-wp",
     "license": "GPL-2.0-or-later",
     "authors": [
         {
@@ -155,10 +154,9 @@
     "require": {
         "php": "^8.1",
         "pop-cms-schema/category-mutations-wp": "^4.3",
+        "pop-cms-schema/custompost-category-mutations": "^4.3",
         "pop-cms-schema/custompost-mutations-wp": "^4.3",
-        "pop-cms-schema/post-categories-wp": "^4.3",
-        "pop-cms-schema/post-category-mutations": "^4.3",
-        "pop-cms-schema/user-state-mutations-wp": "^4.3"
+        "pop-cms-schema/custompost-categories-wp": "^4.3"
     },
     "require-dev": {
         "johnpbloch/wordpress": "^6.6",
@@ -171,12 +169,12 @@
     },
     "autoload": {
         "psr-4": {
-            "PoPCMSSchema\\PostCategoryMutationsWP\\": "src"
+            "PoPCMSSchema\\CustomPostCategoryMutationsWP\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "PoPCMSSchema\\PostCategoryMutationsWP\\": "tests"
+            "PoPCMSSchema\\CustomPostCategoryMutationsWP\\": "tests"
         }
     },
     "scripts": {
